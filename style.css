@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+#main {
+  background: url("./images/ghostrain.jpg") no-repeat;
+  background-size: cover;
+  width: 800px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+#main .feature {
+  background: url("./images/ghostrain1.jpg") no-repeat;
+  display: inline-block;
+  width: 800px;
+  height: 70px;
+  font-size: 15px;
+  color: azure;
+}
+
+.start {
+  float: left;
+}
+
+#bg {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  background: url("./images/bgghost.webp") no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  margin: 0 auto;
+}
+/* 382.5px 이 중앙값임 */
+#hero {
+  position: absolute;
+  bottom: 0;
+  left: 382.5px;
+  display: inline-block;
+  width: 35px;
+  height: 54px;
+
+  background: url("./images/hero.png") no-repeat;
+}
+
+#hero.stop {
+  background-position: 0px 0px;
+}
+
+#hero.left {
+  background-position: -70px 0px;
+}
+
+#hero.right {
+  background-position: -105px 0px;
+}
+
+#life {
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+#timer {
+  font-size: 25px;
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+#timer img {
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 0, 0));
+}
+#timer span {
+  color: rgb(63, 1, 1);
+}
+#life img {
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255, 0, 0));
+}
+
+#main.start {
+  display: inline-block;
+  text-align: center;
+}
